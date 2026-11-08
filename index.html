@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hop hop!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1>Hop hop!</h1>
+    <p class="intro">A little bit of bouncing fun ✨</p>
+
+    <section class="stage" aria-label="A photo of two children bouncing up and down">
+      <img id="photo" src="images/photo.jpg" alt="Two children playing together in a living room">
+      <span class="sparkle sparkle-one" aria-hidden="true">✦</span>
+      <span class="sparkle sparkle-two" aria-hidden="true">✧</span>
+    </section>
+
+    <div class="controls">
+      <button id="toggle" type="button" aria-pressed="true">Pause hopping</button>
+      <label for="speed">Hop speed</label>
+      <input id="speed" type="range" min="0.45" max="1.8" step="0.05" value="1">
+    </div>
+    <p class="hint">Use the button to pause the bouncing, or change the speed.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
